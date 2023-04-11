@@ -20,4 +20,11 @@ describe('WelcomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render header', () => {
+    const fixture = TestBed.createComponent(WelcomeComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('header')?.textContent).toContain('This project demonstrates some mechanisms in the Angular Framework');
+  });
 });
