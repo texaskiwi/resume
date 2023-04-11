@@ -5,7 +5,10 @@
         <section>
             {{work.description}}
         </section>
-        <app-rating (rated)="onRated($event)"></app-rating>
+        <div class="rating">
+            Rating: {{work.rating ?? 'Not rated'}}
+        </div>
+        <app-rating (rated)="onRated(work,$event)" [currentRating] = "work.rating ?? 0"></app-rating>
     </div>
 </div>
 

@@ -20,7 +20,8 @@ export class ResumeComponent {
     this.workExperience$ = this.resumeService.getWorkExperience();
   }
 
-  onRated(rating: number){
+  onRated(work: WorkExperience, rating: number){
+    work.rating = rating;
     console.log(rating);
   }
 }

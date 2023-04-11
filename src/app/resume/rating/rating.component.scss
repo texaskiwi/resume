@@ -5,6 +5,14 @@ ul{
 }
 
 li {
-    margin: 2px;
+    margin: 8px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+li.selected {
+    font-weight: bold;
+    font-size: 2.2em;
+    color: darkblue;
 }
 

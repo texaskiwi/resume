@@ -1,4 +1,7 @@
-<h4>Rating</h4> 
 <ul>
-    <li *ngFor="let i of [1,2,3,4,5]" (click)="onRatingClicked(i)">{{i}}</li>
+    <li 
+    [ngClass]="{'selected': currentRating === i}"
+    *ngFor="let i of [1,2,3,4,5]" 
+    (click)="onRatingClicked(i)">{{i}}
+    </li>
 <ul>

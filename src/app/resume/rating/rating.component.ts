@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-rating',
@@ -6,8 +6,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./rating.component.scss']
 })
 export class RatingComponent {
+  @Input() currentRating: number = 0;
   @Output() rated = new EventEmitter();
-  onRatingClicked(ratingNumber:any){
+  onRatingClicked(ratingNumber:number){
     this.rated.emit(ratingNumber);
   }
 }
