@@ -22,13 +22,13 @@ export class ResumeService {
       endDate: new Date('6/2018')
     }),
     new WorkExperience({
-      title: 'Application Developer III',
+      title: 'Application Developer III - Quorum',
       description: 'Greenfield project in Angular 5. Team dismissed when budget cancelled',
       startDate: new Date('6/2018'),
       endDate: new Date('10/2018')
     }),
     new WorkExperience({
-      title: 'Senior Software Engineer (Contract)',
+      title: 'Senior Software Engineer (Contract) - Transcore',
       description: 'Angular 6 and microservices environment',
       startDate: new Date('11/2018'),
       endDate: new Date('6/2019')
