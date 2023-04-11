@@ -1,0 +1,18 @@
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.workItem {
+    padding: 8px;
+    border-radius: 24px;
+    font-size: 0.8em;
+    width: 260px;
+    border-color: darkgray;
+    background: lightgray;
+    margin: 4px;
+}
+
+h1{
+    font-size: 1.2em;
+}

@@ -1,0 +1,11 @@
+
+<div class="container">
+    <div class="workItem" *ngFor="let work of workExperience$| async">
+        <h1>{{work.title}}</h1>
+        <section>
+            {{work.description}}
+        </section>
+        <app-rating (rated)="onRated($event)"></app-rating>
+    </div>
+</div>
+
